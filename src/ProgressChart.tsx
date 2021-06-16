@@ -139,9 +139,7 @@ class ProgressChart extends AbstractChart<
                 {...this.getPropsForLabels()}
               >
                 {withLabel(i)
-                  ? `${(data as any).labels[i]} ${Math.round(
-                      100 * (data as any).data[i]
-                    )}%`
+                  ? `${(data as any).labels[i]}`
                   : `${Math.round(100 * (data as any).data[i])}%`}
               </Text>
             );
